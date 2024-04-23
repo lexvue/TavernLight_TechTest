@@ -1,0 +1,15 @@
+MainWindow
+  id: jumpwindow
+  !text: tr('Jump Window')
+  size: 480 340
+  @onMouseMove: modules.game_jumpbutton:slideButton()
+
+  Button
+    id: jumpmarquee
+    !text: tr('Jump!')
+    width: 40
+    height: 20
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    draggable: true
+    @onClick:modules.game_jumpbutton:slideButtonUp()

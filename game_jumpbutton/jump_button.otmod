@@ -1,0 +1,10 @@
+Module
+  name: game_jumpbutton
+  description: Creates a window with a marquee button with the string "jump"
+  author: alex
+  website: none
+  scripts: [ jump_button ]
+  autoload: true
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()
